@@ -165,6 +165,7 @@ namespace Fo76ini.Forms.FormMain.Tabs
             }
 
             this.pictureBoxNMProfilePicture.Image = Resources.user_white;
+            /*
             if (NexusMods.User.ProfilePictureFileName != null &&
                 File.Exists(NexusMods.User.ProfilePictureFilePath))
             {
@@ -176,6 +177,8 @@ namespace Fo76ini.Forms.FormMain.Tabs
                     //this.pictureBoxNMProfilePicture.Image = Image.FromFile(NexusMods.User.ProfilePictureFilePath);
                 }
             }
+            ### EHLO EDIT: Disabled because it's not working properly - Causes OutOfMemoryException ###
+             */
 
             this.checkBoxNMUpdateProfile.Checked = Configuration.NexusMods.AutoUpdateProfile;
             //this.checkBoxNMUpdateModInfo.Checked = IniFiles.Instance.GetBool(IniFile.Config, "NexusMods", "bAutoUpdateModInfo", false);
